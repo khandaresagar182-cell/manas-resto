@@ -378,31 +378,28 @@ export function ManasRestaurant() {
                         variants={fadeIn}
                         className="container px-4 md:px-6 border border-muted rounded-3xl"
                     >
-                        <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
-                            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="space-y-2 p-3 sm:p-4 md:p-6 flex flex-col justify-center">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 lg:gap-6">
+                            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="space-y-4 p-4 md:p-6 flex flex-col justify-center">
                                 <div className="inline-block rounded-3xl bg-muted px-3 py-1 text-sm">Our Story</div>
-                                <h2 className="text-base font-bold tracking-tighter sm:text-2xl md:text-4xl lg:text-5xl">From Army to Kitchen</h2>
-                                <p className="hidden sm:block text-sm text-muted-foreground sm:text-base md:text-xl/relaxed">
+                                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">From Army to Kitchen</h2>
+                                <p className="text-base text-muted-foreground md:text-xl/relaxed">
                                     Manas Resto Lounge was founded by <strong>Sanjay Shirsagar</strong>, a retired
                                     Indian Army veteran. After years of disciplined service to the nation, he pursued his
                                     passion for cooking and decided to bring his family&apos;s treasured Maharashtrian recipes
                                     to the world.
                                 </p>
-                                <p className="text-xs text-muted-foreground sm:hidden">
-                                    Founded by <strong>Sanjay Shirsagar</strong>, Army veteran. Authentic Kolhapuri flavors since 2004.
-                                </p>
-                                <p className="hidden sm:block text-sm text-muted-foreground sm:text-base md:text-xl/relaxed">
+                                <p className="text-base text-muted-foreground md:text-xl/relaxed">
                                     Today, Manas has become a landmark on the Pune-Kolhapur Highway, beloved by travelers
                                     and food enthusiasts alike for its authentic Kolhapuri flavors, generous portions,
                                     and the warm hospitality that comes from a tradition of service.
                                 </p>
                                 <div className="flex flex-col gap-2 sm:flex-row">
-                                    <Button variant="outline" size="sm" className="rounded-3xl text-xs sm:text-sm sm:size-default">Our Journey</Button>
-                                    <Button variant="outline" size="sm" className="rounded-3xl text-xs sm:text-sm sm:size-default">Visit Us</Button>
+                                    <Button variant="outline" size="default" className="rounded-3xl">Our Journey</Button>
+                                    <Button variant="outline" size="default" className="rounded-3xl">Visit Us</Button>
                                 </div>
                             </motion.div>
                             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="flex items-center justify-center">
-                                <div className="relative w-full h-full min-h-[200px] sm:min-h-[320px] md:min-h-[420px] lg:min-h-[500px] overflow-hidden rounded-2xl sm:rounded-3xl bg-[#f5f0eb]">
+                                <div className="relative w-full min-h-[320px] sm:min-h-[400px] md:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-3xl bg-[#f5f0eb]">
                                     <Image src="/owner.jpeg" alt="Mr. Sanjay Kshirsagar - Chairman of Manas Group" fill className="object-contain" />
                                 </div>
                             </motion.div>
