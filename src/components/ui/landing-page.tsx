@@ -378,8 +378,15 @@ export function ManasRestaurant() {
                         variants={fadeIn}
                         className="container px-4 md:px-6 border border-muted rounded-3xl"
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 lg:gap-6">
-                            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="space-y-4 p-4 md:p-6 flex flex-col justify-center">
+                        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-4 lg:gap-6">
+                            {/* Image - shows FIRST on mobile (order-1), second on desktop */}
+                            <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="order-1 md:order-2 flex items-center justify-center">
+                                <div className="relative w-full h-[280px] sm:h-[360px] md:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-3xl bg-[#f5f0eb]">
+                                    <Image src="/owner.jpeg" alt="Mr. Sanjay Kshirsagar - Chairman of Manas Group" fill className="object-contain" />
+                                </div>
+                            </motion.div>
+                            {/* Text - shows SECOND on mobile (order-2), first on desktop */}
+                            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="order-2 md:order-1 space-y-4 p-4 md:p-6 flex flex-col justify-center">
                                 <div className="inline-block rounded-3xl bg-muted px-3 py-1 text-sm">Our Story</div>
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">From Army to Kitchen</h2>
                                 <p className="text-base text-muted-foreground md:text-xl/relaxed">
@@ -396,11 +403,6 @@ export function ManasRestaurant() {
                                 <div className="flex flex-col gap-2 sm:flex-row">
                                     <Button variant="outline" size="default" className="rounded-3xl">Our Journey</Button>
                                     <Button variant="outline" size="default" className="rounded-3xl">Visit Us</Button>
-                                </div>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} className="flex items-center justify-center">
-                                <div className="relative w-full min-h-[320px] sm:min-h-[400px] md:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-3xl bg-[#f5f0eb]">
-                                    <Image src="/owner.jpeg" alt="Mr. Sanjay Kshirsagar - Chairman of Manas Group" fill className="object-contain" />
                                 </div>
                             </motion.div>
                         </div>
