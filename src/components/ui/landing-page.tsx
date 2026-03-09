@@ -469,10 +469,10 @@ export function ManasRestaurant() {
                         >
                             <motion.div variants={itemFadeIn} whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }} className="group relative overflow-hidden rounded-3xl sm:col-span-2 md:col-span-2 md:row-span-2 h-[300px] sm:h-[380px] md:h-auto">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
-                                <Image src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=1200&h=800&fit=crop" alt="Mutton Thali" fill className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                                <Image src="/hero-thali.png" alt="Mutton Thali - मटण थाळी" fill className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" />
                                 <div className="absolute inset-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                                    <h3 className="text-xl font-bold">Mutton Thali</h3>
-                                    <p className="text-sm">Our legendary thali with Tambda-Pandhra Rassa, bhakri & more</p>
+                                    <h3 className="text-xl font-bold">मटण थाळी</h3>
+                                    <p className="text-sm">Mutton Thali - Authentic flavors with Tambda-Pandhra Rassa</p>
                                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="mt-3">
                                         <Button variant="outline" size="sm" className="rounded-3xl bg-white/20 backdrop-blur-sm border-white/40 text-white hover:bg-white/30">
                                             View Details <ArrowUpRight className="ml-2 h-4 w-4" />
