@@ -72,7 +72,7 @@ export function ManasRestaurant() {
     }
 
     return (
-        <div className="flex min-h-screen flex-col bg-gradient-to-br from-background via-background to-muted/20">
+        <div className="flex min-h-screen flex-col bg-gradient-to-br from-background via-background to-muted/20 overflow-x-hidden w-full">
             {/* Header */}
             <motion.header
                 initial={{ y: -100 }}
@@ -80,7 +80,7 @@ export function ManasRestaurant() {
                 transition={{ duration: 0.5 }}
                 className={`sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ${scrollY > 50 ? "shadow-md" : ""}`}
             >
-                <div className="container flex h-16 items-center justify-between border-x border-muted px-4 md:px-6">
+                <div className="container flex h-16 items-center justify-between px-4 md:px-6">
                     <div className="flex items-center gap-3">
                         <Link href="/" className="flex items-center space-x-3">
                             <motion.div
@@ -155,8 +155,8 @@ export function ManasRestaurant() {
 
             <main className="flex-1">
                 {/* Hero Section */}
-                <section className="w-full py-8 md:py-16 lg:py-20 xl:py-20 overflow-hidden">
-                    <div className="container px-4 md:px-6 border border-muted rounded-3xl bg-gradient-to-br from-background to-muted/30">
+                <section className="w-full py-8 md:py-16 lg:py-20 xl:py-20">
+                    <div className="container px-4 md:px-6 border border-muted rounded-3xl bg-gradient-to-br from-background to-muted/30 overflow-hidden">
                         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-3 xl:grid-cols-[1fr_600px]">
                             <motion.div
                                 initial="hidden"
