@@ -96,7 +96,7 @@ export function ManasRestaurant() {
                     <nav className="hidden md:flex gap-3">
                         <Link href="#menu" className="text-sm font-medium transition-colors hover:text-primary">Menu</Link>
                         <Link href="#gallery" className="text-sm font-medium transition-colors hover:text-primary">Gallery</Link>
-                        <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">About</Link>
+                        <Link href="#footer" className="text-sm font-medium transition-colors hover:text-primary">About</Link>
                         <Link href="#reviews" className="text-sm font-medium transition-colors hover:text-primary">Reviews</Link>
                         <Link href="#ventures" className="text-sm font-medium transition-colors hover:text-primary">Ventures</Link>
                     </nav>
@@ -131,7 +131,7 @@ export function ManasRestaurant() {
                         </button>
                     </div>
                     <motion.nav variants={staggerContainer} initial="hidden" animate="visible" className="container grid gap-3 pb-8 pt-6">
-                        {["Menu", "Gallery", "About", "Reviews", "Contact"].map((item, index) => (
+                        {["Menu", "Gallery", "Footer", "Reviews", "Contact"].map((item, index) => (
                             <motion.div key={index} variants={itemFadeIn}>
                                 <Link
                                     href={`#${item.toLowerCase()}`}
@@ -685,7 +685,7 @@ export function ManasRestaurant() {
             </main>
 
             {/* Footer */}
-            <footer className="w-full border-t">
+            <footer id="footer" className="w-full border-t">
                 <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="container grid gap-8 px-4 py-10 md:px-6 sm:grid-cols-2 lg:grid-cols-4 border-x border-muted">
                     <div className="space-y-3">
                         <Link href="/" className="flex items-center space-x-3">
@@ -713,7 +713,7 @@ export function ManasRestaurant() {
                             <nav className="mt-4 flex flex-col space-y-2 text-sm">
                                 <Link href="#menu" className="text-muted-foreground hover:text-foreground">Our Menu</Link>
                                 <Link href="#gallery" className="text-muted-foreground hover:text-foreground">Gallery</Link>
-                                <Link href="#about" className="text-muted-foreground hover:text-foreground">About Us</Link>
+                                <Link href="#footer" className="text-muted-foreground hover:text-foreground">About Us</Link>
                                 <Link href="#reviews" className="text-muted-foreground hover:text-foreground">Reviews</Link>
                             </nav>
                         </div>
