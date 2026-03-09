@@ -144,7 +144,9 @@ export function ManasRestaurant() {
                             </motion.div>
                         ))}
                         <motion.div variants={itemFadeIn} className="flex flex-col gap-3 pt-4">
-                            <Button variant="outline" className="w-full rounded-3xl">Reserve Table</Button>
+                            <Button variant="outline" className="w-full rounded-3xl" asChild>
+                                <a href="#about">Our Story</a>
+                            </Button>
                             <Button className="w-full rounded-3xl">Order Now</Button>
                         </motion.div>
                     </motion.nav>
@@ -204,8 +206,8 @@ export function ManasRestaurant() {
                                         View Menu
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
-                                    <Button variant="outline" size="lg" className="rounded-3xl">
-                                        Reserve a Table
+                                    <Button variant="outline" size="lg" className="rounded-3xl" asChild>
+                                        <a href="#about">Our Story</a>
                                     </Button>
                                 </motion.div>
                             </motion.div>
@@ -356,12 +358,6 @@ export function ManasRestaurant() {
                                         <div className="mb-4">{item.icon}</div>
                                         <h3 className="text-xl font-bold">{item.title}</h3>
                                         <p className="text-muted-foreground">{item.description}</p>
-                                    </div>
-                                    <div className="mt-4 flex items-center justify-between">
-                                        <Link href="#contact" className="text-sm font-medium text-primary underline-offset-4 hover:underline">Order now</Link>
-                                        <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                                            <ArrowRight className="h-4 w-4 text-primary" />
-                                        </motion.div>
                                     </div>
                                 </motion.div>
                             ))}
@@ -764,6 +760,15 @@ export function ManasRestaurant() {
                     <div className="container flex flex-col items-center justify-between gap-3 py-6 md:h-16 md:flex-row md:py-0">
                         <p className="text-xs text-muted-foreground">&copy; {new Date().getFullYear()} Manas Resto Lounge. All rights reserved.</p>
                         <p className="text-xs text-muted-foreground">Serving authentic Maharashtrian flavors since 2004 — Satara, Maharashtra</p>
+                        <motion.a
+                            href="#"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary hover:bg-primary/10 transition-colors"
+                        >
+                            <span>⚡</span>
+                            <span>Built by <strong>CS Builds</strong></span>
+                        </motion.a>
                     </div>
                 </div>
             </footer>
