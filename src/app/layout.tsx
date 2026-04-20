@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Manas Resto Lounge | Authentic Maharashtrian Cuisine, Satara",
-  description: "Experience legendary mutton Rassa, unlimited Mutton Thali, and traditional Kolhapuri flavors at Manas Resto Lounge — serving authentic Maharashtrian cuisine on the Pune-Kolhapur Highway since 2004.",
+  description: "Experience legendary mutton rassa, unlimited Mutton Thali, and traditional Kolhapuri flavors at Manas Resto Lounge — serving authentic Maharashtrian cuisine on the Pune-Kolhapur Highway since 2004.",
 };
 
 export default function RootLayout({
